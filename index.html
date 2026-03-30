@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://prime.mensvitalitylab.shop/">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="target" content="US, UK, NZ, AU, IE, DE, ES, AT, FI, SE, BE, NL, CH, DK, PL, IT">
     
     <title>ManForceX™ Official Site | The 2026 'Vitality Protocol' for Performance Support</title>
-
     <meta name="description" content="Discover the natural 3-second ritual to support peak male energy and stamina. MFX Research 2026. Highly effective, 100% natural, and now 73% OFF. Secure your supply today.">
     <meta name="keywords" content="ManForceX, buy ManForceX, ManForceX reviews, male vitality supplement, natural testosterone support, performance vitamins, stamina booster, ManForceX official site">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -82,17 +85,21 @@
         .btn-main:hover { background: var(--cta-hover); transform: translateY(-2px); }
         .btn-accent { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-yellow); color: #000; font-weight: 800; font-size: 0.9rem; padding: 14px 28px; border-radius: 10px; border-bottom: 3px solid rgba(0,0,0,0.1); }
 
-        .reviews-list { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
-        .review-card { background: #fff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 30px 20px; text-align: center; box-shadow: var(--shadow-soft); }
-        .review-photo { width: 70px; height: 70px; border-radius: 50%; margin: 0 auto 12px; border: 3px solid var(--brand-header); object-fit: cover; }
+        .bg-review { background: linear-gradient(180deg, #FFF8F0 0%, #ffffff 100%); position: relative; overflow: hidden;}
+        .bg-review::before { content: '“'; position: absolute; top: -20px; left: 20px; font-size: 15rem; color: rgba(171, 91, 17, 0.05); font-family: 'Merriweather', serif; font-weight: 900; pointer-events: none;}
+
+        .reviews-list { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; position: relative; z-index: 1;}
+        .review-card { background: #fff; border: 1px solid rgba(171, 91, 17, 0.08); border-radius: 16px; padding: 30px 20px; text-align: center; box-shadow: 0 10px 40px rgba(171, 91, 17, 0.06); transition: 0.3s; }
+        .review-card:hover { transform: translateY(-5px); }
+        .review-photo { width: 70px; height: 70px; border-radius: 50%; margin: 0 auto 12px; border: 3px solid var(--bg-gray); object-fit: cover; }
         .review-verify { color: #16a34a; font-weight: 700; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 10px; display: block; }
         .review-text { font-size: 1rem; color: var(--text-body); line-height: 1.6; margin-bottom: 12px; font-style: italic; }
         .review-author { font-weight: 800; color: var(--text-main); font-size: 0.9rem; display: block; }
         .stars { display: flex; justify-content: center; gap: 3px; color: var(--star-gold); margin-bottom: 8px; }
 
-        .hero-img { max-width: 350px; }
-        .mechanism-img { max-width: 350px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
-        .ing-list-img { max-width: 400px; }
+        .hero-img { width: 100%; max-width: 480px; }
+        .mechanism-img { width: 100%; max-width: 500px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+        .ing-list-img { width: 100%; max-width: 550px; }
 
         .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 25px; }
         .trust-box { background: #fff; padding: 20px 10px; border-radius: 12px; border: 1px solid #f1f5f9; text-align: center; }
@@ -201,7 +208,7 @@
 </section>
 
 <!-- 5. Testimonials Section -->
-<section class="section bg-soft">
+<section class="section bg-review">
     <div class="container text-center">
         <span class="badge">Verified Customer Stories</span>
         <div style="margin-bottom: 35px;">
@@ -277,7 +284,7 @@
     <div class="container">
         <div class="mechanism-flex">
             <div style="flex: 1; text-align: center;">
-                <img src="images/manforcex_product_bottle.png" alt="Daily Use Visualization" class="mechanism-img">
+                <img src="images/manforcex4.png" alt="Simple 3-Second Daily Protocol" class="mechanism-img">
             </div>
             <div style="flex: 1;">
                 <span class="attention">Daily Protocol:</span>
